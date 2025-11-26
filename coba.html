@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Lemon Fresh | Minuman Segar</title>
+
+   <!-- GOOGLE FONTS -->
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+   <!-- BOOTSTRAP -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+   <style>
+      body {
+         background-color: #fffce8;
+         font-family: 'Poppins', sans-serif;
+         scroll-behavior: smooth;
+      }
+
+      /* NAVBAR */
+      .navbar {
+         background-color: #ffd938;
+      }
+
+      .navbar-brand {
+         color: #4d4d00 !important;
+         font-weight: 700;
+         display: flex;
+         align-items: center;
+      }
+
+      .navbar-brand img {
+         width: 40px;
+         margin-right: 10px;
+      }
+
+      /* HERO */
+      .hero {
+         background-image: url('logo2.jpeg');
+         background-size: cover;
+         background-position: center;
+         height: 500px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         color: #4d4d00;
+         text-shadow: 2px 2px 5px #fff5;
+         background-blend-mode: overlay;
+         background-color: rgba(255, 255, 140, 0.4);
+         animation: fadeIn 1.8s ease-in-out;
+      }
+
+      @keyframes fadeIn {
+         from {
+            opacity: 0;
+         }
+
+         to {
+            opacity: 1;
+         }
+      }
+
+      /* CARD */
+      .card {
+         border-radius: 15px;
+         border: 2px solid #ffe45c;
+         transition: transform .3s;
+      }
+
+      .card:hover {
+         transform: scale(1.05);
+      }
+
+      .btn-lemon {
+         background-color: #ffdf48;
+         color: #4d4d00;
+         border-radius: 10px;
+         font-weight: 600;
+      }
+
+      .btn-lemon:hover {
+         background-color: #ffcc00;
+      }
+
+      footer {
+         background-color: #ffd938;
+         color: #4d4d00;
+         padding: 20px;
+         text-align: center;
+      }
+
+      /* SECTION TITLE */
+      .section-title {
+         font-weight: 700;
+         color: #4d4d00;
+      }
+   </style>
+</head>
+
+<body>
+
+   <!-- NAVBAR -->
+   <nav class="navbar navbar-expand-lg">
+      <div class="container">
+         <a class="navbar-brand" href="#">
+            <img src="logo.jpeg" alt="Logo">
+            Lemon Fresh
+         </a>
+      </div>
+   </nav>
+
+   <!-- HERO -->
+   <div class="hero">
+   </div>
+
+   <!-- BEST SELLER -->
+   <div class="container mt-5">
+      <h2 class="text-center section-title mb-4">Best Seller 🍋</h2>
+
+      <div class="row justify-content-center">
+         <div class="col-md-6">
+            <div class="card p-3 shadow-sm">
+               <img src="logo.jpeg"
+                  class="card-img-top" alt="Lemon Squash">
+               <div class="card-body text-center">
+                  <h5 class="card-title fw-bold">Lemon Squash</h5>
+                  <p class="card-text">Minuman paling favorit! Segar, asam-manis, dan bikin semangat.</p>
+                  <button class="btn btn-lemon w-100">Pesan Sekarang</button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- MENU -->
+   <div class="container mt-5">
+      <h2 class="text-center section-title mb-4">Menu Minuman</h2>
+
+      <div class="row g-4">
+
+         <!-- 6 menu -->
+         <div class="col-md-4">
+            <div class="card p-3 shadow-sm">
+               <img src="https://images.unsplash.com/photo-1497534446932-c925b458314e?auto=format&fit=crop&w=900&q=60"
+                  class="card-img-top" alt="Lemon Tea">
+               <div class="card-body">
+                  <h5 class="card-title fw-bold">Lemon Tea</h5>
+                  <p>Teh segar dengan potongan lemon asli.</p>
+                  <button class="btn btn-lemon w-100">Pesan</button>
+               </div>
+            </div>
+         </div>
+
+         <div class="col-md-4">
+            <div class="card p-3 shadow-sm">
+               <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=900&q=60"
+                  class="card-img-top" alt="Lemon Squash">
+               <div class="card-body">
+                  <h5 class="card-title fw-bold">Lemon Squash</h5>
+                  <p>Kesegaran soda dan lemon murni.</p>
+                  <button class="btn btn-lemon w-100">Pesan</button>
+               </div>
+            </div>
+         </div>
+
+         <div class="col-md-4">
+            <div class="card p-3 shadow-sm">
+               <img src="https://images.unsplash.com/photo-1556906781-9a412961c28c?auto=format&fit=crop&w=900&q=60"
+                  class="card-img-top" alt="Honey Lemon">
+               <div class="card-body">
+                  <h5 class="card-title fw-bold">Honey Lemon</h5>
+                  <p>Perpaduan lemon dan madu yang sehat.</p>
+                  <button class="btn btn-lemon w-100">Pesan</button>
+               </div>
+            </div>
+         </div>
+
+         <div class="col-md-4">
+            <div class="card p-3 shadow-sm">
+               <img src="https://images.unsplash.com/photo-1627662054583-002c3f55b432?auto=format&fit=crop&w=900&q=60"
+                  class="card-img-top" alt="Lemon Mojito">
+               <div class="card-body">
+                  <h5 class="card-title fw-bold">Lemon Mojito</h5>
+                  <p>Lemon, mint, dan soda yang menyegarkan.</p>
+                  <button class="btn btn-lemon w-100">Pesan</button>
+               </div>
+            </div>
+         </div>
+
+         <div class="col-md-4">
+            <div class="card p-3 shadow-sm">
+               <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=900&q=60"
+                  class="card-img-top" alt="Lemon Milk">
+               <div class="card-body">
+                  <h5 class="card-title fw-bold">Ice Lemon Milk</h5>
+                  <p>Segar dan creamy sekaligus.</p>
+                  <button class="btn btn-lemon w-100">Pesan</button>
+               </div>
+            </div>
+         </div>
+
+         <div class="col-md-4">
+            <div class="card p-3 shadow-sm">
+               <img src="https://images.unsplash.com/photo-1502745292291-180c5ca4f7c2?auto=format&fit=crop&w=900&q=60"
+                  class="card-img-top" alt="Smoothie">
+               <div class="card-body">
+                  <h5 class="card-title fw-bold">Lemon Smoothie</h5>
+                  <p>Segar, lembut, dan menenangkan.</p>
+                  <button class="btn btn-lemon w-100">Pesan</button>
+               </div>
+            </div>
+         </div>
+
+      </div>
+   </div>
+
+   <!-- TABEL HARGA -->
+   <div class="container mt-5">
+      <h2 class="text-center section-title mb-4">Tabel Harga</h2>
+
+      <table class="table table-bordered text-center">
+         <thead class="table-warning">
+            <tr>
+               <th>Nama Minuman</th>
+               <th>Harga</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td>Lemon Tea</td>
+               <td>Rp 10.000</td>
+            </tr>
+            <tr>
+               <td>Lemon Squash</td>
+               <td>Rp 12.000</td>
+            </tr>
+            <tr>
+               <td>Honey Lemon</td>
+               <td>Rp 13.000</td>
+            </tr>
+            <tr>
+               <td>Lemon Mojito</td>
+               <td>Rp 15.000</td>
+            </tr>
+            <tr>
+               <td>Ice Lemon Milk</td>
+               <td>Rp 14.000</td>
+            </tr>
+            <tr>
+               <td>Lemon Smoothie</td>
+               <td>Rp 16.000</td>
+            </tr>
+         </tbody>
+      </table>
+   </div>
+
+   <!-- ABOUT -->
+   <div class="container mt-5">
+      <h2 class="text-center section-title mb-4">Tentang Kami</h2>
+
+      <p class="text-center mx-auto" style="max-width: 700px;">
+         Lemon Fresh berdiri pada tahun 2025 dengan misi menghadirkan minuman lemon terbaik, sehat, dan menyegarkan bagi
+         semua orang. Setiap produk dibuat dari buah lemon segar pilihan tanpa bahan pengawet.
+      </p>
+   </div>
+
+   <!-- ORDER FORM -->
+   <div class="container mt-5">
+      <h2 class="text-center section-title mb-4">Form Order</h2>
+
+      <form class="mx-auto" style="max-width: 600px;">
+         <div class="mb-3">
+            <label class="form-label">Nama</label>
+            <input type="text" class="form-control">
+         </div>
+
+         <div class="mb-3">
+            <label class="form-label">Pilih Minuman</label>
+            <select class="form-select">
+               <option>Lemon Tea</option>
+               <option>Lemon Squash</option>
+               <option>Honey Lemon</option>
+               <option>Lemon Mojito</option>
+               <option>Ice Lemon Milk</option>
+               <option>Lemon Smoothie</option>
+            </select>
+         </div>
+
+         <div class="mb-3">
+            <label class="form-label">Jumlah</label>
+            <input type="number" class="form-control">
+         </div>
+
+         <button class="btn btn-lemon w-100">Kirim Pesanan</button>
+      </form>
+   </div>
+
+   <!-- KONTAK -->
+   <div class="container mt-5">
+      <h2 class="text-center section-title mb-4">Kontak & Lokasi</h2>
+
+      <div class="text-center">
+         <p>📍 Jl. Segar No. 15, Lemon City</p>
+         <p>📞 0812-3456-7890</p>
+         <p>📧 lemonfresh@gmail.com</p>
+
+         <iframe
+            src="https://maps.google.com/maps?q=jakarta&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            width="100%" height="300" style="border:0; border-radius:15px;" allowfullscreen></iframe>
+      </div>
+   </div>
+
+   <!-- FOOTER -->
+   <footer class="mt-5">
+      <p>© 2025 Lemon Fresh. All rights reserved.</p>
+   </footer>
+
+</body>
+
+</html>
