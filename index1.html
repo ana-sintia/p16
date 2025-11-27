@@ -15,20 +15,14 @@
    <style>
       body {
          background-color: #fffce8;
-         font-family: 'Poppins', sans-serif;
-         scroll-behavior: smooth;
-         padding-top: 80px;
       }
 
       /* NAVBAR FIXED */
       .navbar {
          background-color: #ffd938;
          position: fixed;
-         top: 0;
-         left: 0;
          width: 100%;
          z-index: 9999;
-         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
       }
 
       .navbar-brand {
@@ -55,19 +49,13 @@
 
       /* HERO */
       .hero {
-         height: 60vh;
-         background-image: url('logo2.jpeg');
-         background-size: cover;
-         background-position: center;
-         background-repeat: no-repeat;
-         background-color: rgba(255, 255, 150, 0.4);
-         background-blend-mode: overlay;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         text-align: center;
-         color: #4d4d00;
-         text-shadow: 2px 2px 4px rgba(255, 255, 255, .6);
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 120px; /* wajib karena navbar fixed */
+        text-align: center;
       }
 
       .section-title {
@@ -135,7 +123,6 @@
                <li class="nav-item"><a class="nav-link" href="#best"><b>Best Seller</b></a></li>
                <li class="nav-item"><a class="nav-link" href="#menu"><b>Menu</b></a></li>
                <li class="nav-item"><a class="nav-link" href="#harga"><b>Harga</b></a></li>
-               <li class="nav-item"><a class="nav-link" href="#about"><b>Harga</b></a></li>
                <li class="nav-item"><a class="nav-link" href="#order"><b>Order</b></a></li>
                <li class="nav-item"><a class="nav-link" href="#contact"><b>Kontak</b></a></li>
             </ul>
@@ -145,11 +132,15 @@
 
    <!-- HERO -->
    <section id="hero" class="hero">
-   </section>
+   <div>
+      <h1><b>Selamat Datang di Lemon Fresh </b></h1>
+      <h1><p>Minuman segar, sehat, dan menyegarkan setiap hari!</p></h1>
+   </div>
+</section>
 
    <!-- BEST SELLER -->
    <section id="best" class="container mt-5">
-      <h2 class="text-center section-title mb-4">Best Seller 🍋</h2>
+      <h2 class="text-center section-title mb-4">Best Seller </h2>
 
       <div class="row justify-content-center">
          <div class="col-md-4">
@@ -158,7 +149,7 @@
                <div class="card-body text-center">
                   <h5 class="fw-bold">Lemon Squash</h5>
                   <p>Minuman paling favorit! Asam-manis segarnya bikin nagih.</p>
-                  <button class="btn btn-lemon w-100">Pesan Sekarang</button>
+                  <a href="#order" class="btn btn-lemon w-100">Pesan Sekarang</a>
                </div>
             </div>
          </div>
@@ -177,7 +168,7 @@
                <div class="card-body">
                   <h5 class="fw-bold">Lemon Tea</h5>
                   <p>Teh segar dan potongan lemon.</p>
-                  <button class="btn btn-lemon w-100">Pesan</button>
+                  <a href="#order" class="btn btn-lemon w-100">Pesan Sekarang</a>
                </div>
             </div>
          </div>
@@ -188,7 +179,7 @@
                <div class="card-body">
                   <h5 class="fw-bold">Lemon Squash</h5>
                   <p>Kesegaran soda dan lemon murni.</p>
-                  <button class="btn btn-lemon w-100">Pesan</button>
+                  <a href="#order" class="btn btn-lemon w-100">Pesan Sekarang</a>
                </div>
             </div>
          </div>
@@ -199,7 +190,7 @@
                <div class="card-body">
                   <h5 class="fw-bold">Honey Lemon</h5>
                   <p>Perpaduan lemon dan madu alami.</p>
-                  <button class="btn btn-lemon w-100">Pesan</button>
+                  <a href="#order" class="btn btn-lemon w-100">Pesan Sekarang</a>
                </div>
             </div>
          </div>
@@ -210,7 +201,7 @@
                <div class="card-body">
                   <h5 class="fw-bold">Lemon Mojito</h5>
                   <p>Lemon, mint, dan, soda segar.</p>
-                  <button class="btn btn-lemon w-100">Pesan</button>
+                  <a href="#order" class="btn btn-lemon w-100">Pesan Sekarang</a>
                </div>
             </div>
          </div>
@@ -221,7 +212,7 @@
                <div class="card-body">
                   <h5 class="fw-bold">Ice Lemon Milk</h5>
                   <p>Segar plus creamy.</p>
-                  <button class="btn btn-lemon w-100">Pesan</button>
+                  <a href="#order" class="btn btn-lemon w-100">Pesan Sekarang</a>
                </div>
             </div>
          </div>
@@ -232,7 +223,7 @@
                <div class="card-body">
                   <h5 class="fw-bold">Lemon Smoothie</h5>
                   <p>Tekstur lembut dan segar.</p>
-                  <button class="btn btn-lemon w-100">Pesan</button>
+                  <a href="#order" class="btn btn-lemon w-100">Pesan Sekarang</a>
                </div>
             </div>
          </div>
@@ -291,10 +282,10 @@
 
          <div class="mb-3">
             <label class="form-label">Jumlah</label>
-            <input type="number" class="form-control">
+            <input type="number" class="form-control" min="1" value="1">
          </div>
 
-         <button class="btn btn-lemon w-100">Kirim Pesanan</button>
+         <a href="#hero" type="submit" class="btn btn-lemon w-100">Kirim Pesanan</a>
       </form>
    </section>
 
